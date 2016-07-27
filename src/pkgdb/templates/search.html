@@ -1,0 +1,14 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Search</h1>
+  <form action="" method="post" name="login">
+      {{ form.hidden_tag() }}
+      <p>
+          Search for:<br>
+          {{ form.request }}<br>
+      </p>
+      <p><input type="submit" value="Search"></p>
+  </form>
+{% endblock %}
